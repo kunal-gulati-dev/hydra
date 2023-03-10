@@ -118,9 +118,58 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    border: 1px solid red;
+    /* border: 1px solid red; */
 }
 
+.primary-heading {
+    font-size: 4rem;
+    line-height: 1;
+    /* padding-bottom: 4rem; */
+}
+
+.primary-heading .dive {
+    background: -webkit-linear-gradient(90deg, #8176AF, #C0B7E8);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.primary-heading .text-vr {
+    background: -webkit-linear-gradient(90deg, #C0B7E8, #8176AF);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.hero-description {
+    font-size: 1.5rem;
+    line-height: 1.7;
+    padding: 4rem 0rem 4rem 0;
+}
+
+.text-arrow {
+    display: flex;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+.btn-build {
+    background: linear-gradient(90deg, #8176AF, #C0B7E8);
+    border-radius: 3rem;
+    color: #343045;
+    padding: 2rem 4rem;
+    text-decoration: none;
+    font-weight: 800;
+}
+
+.arrow-img {
+    margin-left: 3rem;
+}
+
+.img-box {
+    width: 45.0rem;
+    height: 40.0rem;
+    overflow: hidden;
+    border: 1px solid red;
+}
 
 
 
