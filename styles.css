@@ -45,6 +45,7 @@ body {
     font-weight: 400;
     color: #FFFFFF;
     background-color: #302C42;
+    overflow-x: hidden;
 }
 
 .main-section {
@@ -183,6 +184,28 @@ body {
 .img-box img {
     display: block;
     margin: auto;
+    /* position: relative!important; */
+}
+
+.vector-right {
+    position: absolute!important;
+    right: -14px;
+    top:165px;
+    z-index: -1;
+}
+
+.vector-up {
+    position: absolute !important;
+    z-index: -2;
+    top: -35px;
+    right: 125px;
+}
+
+.vector-down {
+    position: absolute !important;
+    z-index: -3;
+    top: 408px;
+    right: -58px;
 }
 
 /* contact section */
