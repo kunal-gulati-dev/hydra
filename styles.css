@@ -247,13 +247,27 @@ hr {
     line-height: 2;
 }
 
+/* Info Section */
 
+.hydra-info {
+    padding: 4.8rem 8.6rem 4.8rem 8.6rem;
+}
 
+.grid--2-cols {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 4.8rem;
+    row-gap: 9.6rem;
+}
 
+.tertiary-heading {
+    font-size: 4rem;
+    line-height: 1.5;
+}
 
-
-
-
+.light-bold {
+    font-weight: 100;
+}
 
 
 
