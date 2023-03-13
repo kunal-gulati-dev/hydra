@@ -50,6 +50,7 @@ body {
 
 .main-section {
     padding: 4.8rem 8.6rem 4.8rem 8.6rem;
+    
 }
 
 /* Header section */
@@ -260,6 +261,7 @@ hr {
     row-gap: 9.6rem;
 }
 
+
 .tertiary-heading {
     font-size: 4rem;
     line-height: 1.5;
@@ -269,16 +271,416 @@ hr {
     font-weight: 100;
 }
 
+.step-heading-box {
+    display: flex;
+    align-items: center;
+}
+
+.arrow-long {
+    transform: translateX(-23px) translateY(27px);
+}
+
+.info-description {
+    font-size: 1.5rem;
+    line-height: 2;
+}
+
+.man-with-vr {
+    border-radius: 40% 20% 40% 20%;
+
+}
+
+.second-info-description {
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+}
+
+.description-button {
+    display: inline-block;
+    margin-top: 1.5rem;
+}
+
+.third-description-arrow {
+    transform: translateX(16px) translateY(27px);
+}
+
+
+
+/* FEATURE SECTION */
+
+.section-feature {
+    padding: 4.8rem 8.6rem 4.8rem 8.6rem;
+}
+
+.feature-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 1rem;
+}
+
+.feature-column {
+    border: 1px solid black;
+    background: radial-gradient(50% 50% at 50% 50%, #433D60 0%, #211E2E 100%);
+    border-radius: 40px;
+    padding: 4rem;
+}
+
+.features-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 2rem;
+}
+
+
+.feature-heading {
+    font-size: 2rem;
+}
+
+.feature-para {
+    font-size: 1.1rem;
+    line-height: 1.9;
+}
+
+.feature-image {
+    border-radius: 50%;
+    border: 20px solid rgb(14, 14, 14, 32%);
+}
+
+/* banner section */
+
+.hydra-banner {
+    padding: 4.8rem 8.6rem 4.8rem 8.6rem;
+    position: relative;
+}
+
+.banner-img {
+    width: 100%;
+    height: 303px;
+    border-radius: 150px;
+    overflow: hidden;
+
+}
+
+.image-banner {
+    width: 100%;
+}
+
+.banner-text {
+    position: absolute;
+    top: 35%;
+    right: 27%;
+}
+
+
+
+.chevron-outline {
+    font-size: 36px;
+    color: black;
+    position: absolute;
+    top: 75%;
+    right: 47%;
+    padding: 20px;
+    border-radius: 50%;
+    background: linear-gradient(90deg, #8176AF, #C0B7E8);
+    text-align: center;
+    align-items: center;
+    border: 20px solid rgb(14, 14, 14);
+}
+
+
+/* Brand section */
+
+.section-brand {
+    padding: 3.2rem 8.6rem 3.2rem 8.6rem;
+}
+
+.logos {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+/* How we build section */
+
+.how-build {
+    padding: 3.2rem 8.6rem 3.2rem 8.6rem;
+}
+
+.arrow-long-build-section {
+    transform: translateX(10px) translateY(27px);
+}
+
+/* Number Section */
+
+.number-section {
+    padding: 3.2rem 8.6rem 3.2rem 8.6rem;
+    margin-bottom: 8rem;
+}
+
+.number-list {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    
+}
+.numbers {
+    position: relative;
+}
+.number-heading {
+    position: relative;
+    font-size: 3.6rem;
+    padding: 3.6rem;
+    background: linear-gradient(90deg, #8176AF, #C0B7E8);
+    border-radius: 50%;
+}
+
+.number-heading::before {
+    content: "";
+    display: block;
+    width: 130%;
+    height: 130%;
+    background-color: rgba(0, 0, 0, .2);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+}
+
+
+
+.arrow-small-right {
+    position: absolute;
+    left: -65px;
+    top: 130px;
+}
+
+.number-para {
+    position: absolute;
+    font-size: 1.8rem;
+    font-weight: 600;
+    bottom: -80px;
+    width: 150px;
+}
+
+
+/* Form Section */
+
+.hydra-form {
+    padding: 4.8rem 8.6rem 4.8rem 8.6rem;
+    margin-top: 8rem;
+}
+
+
+.form-box {
+    border-radius: 50px;
+    background: radial-gradient(50% 50% at 50% 50%, #403A5F 0%, #211E2E 100%);
+    padding: 8.0rem;
+}
+
+.form-heading {
+    font-size: 3.6rem;
+    line-height: 3;
+    text-align: center;
+}
+
+.form-line {
+    text-align: center;
+    display: block;
+    margin: auto;
+}
+
+.form-tag-line {
+    text-align: center;
+}
+
+.form-flex *:focus {
+    outline: none;
+}
+
+.form-tag-line {
+    font-size: 2.4rem;
+    font-weight: 100;
+    line-height: 1.5;
+    margin-top: 1.5rem;
+}
+
+.form-field::placeholder {
+    color: white;
+}
+
+input {
+    display: block;
+}
+.form-detail input {
+    font-family: inherit;
+    color: inherit;
+}
 
 
 
 
 
+.form-field {
+    background: none;
+    border: 2px solid white;
+    border-radius: 30px;
+    padding: 15px;
+    margin-top: 2rem;
+}
+
+.name-details {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.name-details input {
+    width: 50%;
+}
+
+.email-phone {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+}
 
 
+.email-phone input {
+    width: 50%;
+}
+
+.subject {
+    width: 100%;
+}
+
+.about {
+    width: 100%;
+    height: 200px;
+}
+
+textarea {
+    background: none;
+    border: 2px solid white;
+    border-radius: 30px;
+    font-family: inherit;
+    color: inherit;
+    margin-top: 2rem;
+    /* display: block; */
+    margin-bottom: 2rem;
+    padding: 1rem;
+}
+
+textarea::placeholder {
+    color: white;
+}
+
+.btn-form {
+    background: linear-gradient(90deg, #8176AF, #C0B7E8);
+    border-radius: 3rem;
+    color: #343045;
+    padding: 2rem 4rem;
+    text-decoration: none;
+    font-weight: 800;
+    font-size: 1.2rem;
+    display: block;
+    margin-top: 2rem;
+    margin-left: auto;
+    margin-right: auto;
+    width:20%;
+    text-align: center;
+}
 
 
+/* footer Section */
+
+.footer {
+    padding: 4.8rem 8.6rem 4.8rem 8.6rem;
+    margin-top: 8rem;
+}
+
+.first-footer {
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 6rem;
+}
 
 
+.list {
+    list-style: none;
+}
+
+.footer-link:link,
+.footer-link:visited {
+    text-decoration: none;
+    font-size: 1.6rem;
+    color: #fff;
+    font-weight: 600;
+}
+
+.first-list {
+    display: flex;
+    flex-direction: column;
+    row-gap: 2.9rem;
+}
+
+.second-list {
+    display: flex;
+    flex-direction: column;
+    row-gap: 2.9rem;
+}
+
+.social-icon-list {
+    list-style: none;
+}
 
 
+.footer-last-link {
+    font-size: 1.6rem;
+    color: #fff;
+    font-weight: 600;
+}
+
+.third-list {
+    display: flex;
+    flex-direction: column;
+    row-gap: 2.9rem;
+}
+
+.footer-btn {
+    margin-top: 3rem;
+}
+
+.btn-footer {
+    background: linear-gradient(90deg, #8176AF, #C0B7E8);
+    border-radius: 3rem;
+    color: #343045;
+    padding: 2rem 4rem;
+    text-decoration: none;
+    font-weight: 800;
+    font-size: 1.2rem;
+}
+
+
+.s-icon {
+    padding: 10px;
+    background-color: #C0B7E8;
+    font-size: 2.4rem;
+    color: #211E2E;
+    border-radius: 50%;
+    margin-right: 1rem;
+}
+
+
+.footer-hori {
+    margin-bottom: 4rem;
+}
+
+.footer-credits {
+    font-size: 1.6rem;
+    font-weight: 600;
+    text-align: center;
+}
