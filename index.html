@@ -7,12 +7,14 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="responsive.css">
     <title>Hydra</title>
 </head>
 <body>
     <section class="main-section">
-        <header class="header">
+        <header class="header nav-open">
             <a href=""><img src="assets/logo.png" alt="Hydra logo" class="logo"></a>
             <ul class="first-nav-list">
                 <li><a class="first-nav-link" href="#">ABOUT</a></li>
@@ -24,20 +26,24 @@
                 <li><a class="second-nav-link inline-border" href="#">CONTACT US</a></li>
                 <li><a class="second-nav-link inline-color" href="#">JOIN HYDRA</a></li>
             </ul>
+            <button class="btn-mobile-nav">
+                <img src="assets/hamburger-Button.svg" alt="" class="icon-mobile-nav" name="">
+                <ion-icon class="icon-mobile-nav" name="close-circle-outline"></ion-icon>
+            </button>
         </header>
         <div class="hero">
             <div class="hero-content">
-                <h1 class="primary-heading"><span class="dive">Dive</span> into the Depths <br>
-                of <span class="text-vr">Virtual Reality</span></h1>
+                <h1 class="primary-heading"><span class="dive">Dive</span> <span class="res-sm-font">into the Depths</span> <br>
+                <span class="res-sm-font">of</span> <span class="text-vr">Virtual Reality</span></h1>
                 <p class="hero-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. <br> Velit provident deserunt dolore, a cum odio enim, ipsa <br>veritatis nihil ullam omnis ea voluptas eveniet?</p>
                 <div class="text-arrow">
-                    <a href="#" class="btn-build">BUILD YOUR WORLD</a>
-                    <img src="assets/short-arrow.svg" alt="arrow image" class="arrow-img">
+                    <a href="#" class="btn-build res-btn-build">BUILD YOUR WORLD</a>
+                    <img src="assets/short-arrow.svg" alt="arrow image" class="arrow-img res-arrow-img">
                 </div>
             </div>
             <div class="hero-image">
                 <div class="img-box">
-                    <img src="assets/girl-vr.png" alt="girl with vr">
+                    <img src="assets/girl-vr.png" alt="girl with vr" class="girl-with-vr">
                     <img src="assets/vector-right.png" alt="" class="vector-right">
                     <img src="assets/vector-up.png" alt="" class="vector-up">
                     <img src="assets/vector-down.png" alt="" class="vector-down">
@@ -45,30 +51,39 @@
             </div>
         </div>
         <div class="contact-hero-container">
-            <div class="contact-hero">
-                <img src="assets/location-mark.svg" alt="" class="contact-img">
-                <div>
-                    <h2 class="secondary-heading">Pay Us a Visit</h2>
-                    <p class="contact-description">Union St, Seattle, WA 98101, United States</p>
+            <!-- <div class=""> -->
+                <ion-icon name="chevron-back-circle-outline" class="arrow-button res-arrow-right prev" onclick="plusSlides(-1)" ></ion-icon>
+                <div class="contact-hero mySlides">
+                    <div class="res-contact-hero">
+                        <img src="assets/location-mark.svg" alt="" class="contact-img">
+                        <div>
+                            <h2 class="secondary-heading">Pay Us a Visit</h2>
+                            <p class="contact-description">Union St, Seattle, WA 98101, United States</p>
+                        </div>
+                    </div>
                 </div>
-            </div>
-            <hr>
-            <div class="contact-hero">
-                <img src="assets/caller-mark.svg" alt="" class="contact-img">
-                <div class="">
-                    <h2 class="secondary-heading">Give Us a Call</h2>
-                    <p class="contact-description">(110) 1111-1010</p>
+                <hr>
+                <div class="contact-hero mySlides">
+                    <div class="res-contact-hero">
+                        <img src="assets/caller-mark.svg" alt="" class="contact-img">
+                        <div class="">
+                            <h2 class="secondary-heading">Give Us a Call</h2>
+                            <p class="contact-description">(110) 1111-1010</p>
+                        </div>
+                    </div>
                 </div>
-            </div>
-            <hr>
-            <div class="contact-hero">
-                <img src="assets/message-mark.svg" alt="" class="contact-img">
-                <div>
-                    <h2 class="secondary-heading">Send Us a Message</h2>
-                    <p class="contact-description">Contact@HydraVTech.com</p>
-
+                <hr>
+                <div class="contact-hero mySlides res-contact-hero">
+                    <div class="res-contact-hero">
+                        <img src="assets/message-mark.svg" alt="" class="contact-img">
+                        <div>
+                            <h2 class="secondary-heading">Send Us a Message</h2>
+                            <p class="contact-description">Contact@HydraVTech.com</p>
+                        </div>
+                    </div>
                 </div>
-            </div>
+                <ion-icon name="chevron-forward-circle-outline" class="arrow-button res-arrow-left next" onclick="plusSlides(-1)"></ion-icon>
+            <!-- </div> -->
         </div>
     </section>
     <section class="hydra-info">
@@ -76,9 +91,9 @@
             <!-- step 1 -->
             <div class="step-heading-box">
                 <h5 class="tertiary-heading">INTRODUCTION<br><span class="light-bold">TO HYDRA VR</span></h5>
-                <img src="assets/arrow-long.svg" alt="arrow-long" class="arrow-long">
+                <img src="assets/arrow-long.svg" alt="arrow-long" class="arrow-long hydra-info-d-none">
             </div>
-            <div class="step-description-box">
+            <div class="step-description-box hydra-info-d-none">
                 <p class="info-description">Vitae sapien pellentesque habitant morbi tristique senectus et netus et. Feugiat
                     nibh sed pulvinar proin gravida hendrerit lectus. Mi sit amet mauris commodo 
                     quis imperdiet massa tincidunt nunc. Viverra aliquet eget sit amet tellus. Ornare 
@@ -89,7 +104,7 @@
                 <img src="assets/man-vr.png" alt="man-with-vr" class="man-with-vr">
             </div>
             <div class="step-description-box">
-                <h5 class="tertiary-heading">ABOUT<br><span class="light-bold">HYDRA VR</span></h5>
+                <h5 class="tertiary-heading hydra-info-d-none">ABOUT<br><span class="light-bold">HYDRA VR</span></h5>
                 <p class="info-description second-info-description">Eget mi proin sed libero enim sed faucibus turpis. Nisl rhoncus mattis rhoncus 
                     urna neque viverra justo. Vivamus at augue eget arcu dictum. Ultrices gravida 
                     dictum fusce ut placerat orci. Aenean et tortor at risus viverra adipiscing at in. 
@@ -99,14 +114,14 @@
                     cursus sit amet. Vel eros donec ac odio tempor orci dapibus. Sem nulla pha
                     retra diam sit amet nisl suscipit adipiscing bibendum. Leo a diam sollicitudi
                     n tempor.</p>
-                <a href="#" class="btn-build description-button">BUILD YOUR WORLD</a>
+                <a href="#" class="btn-build description-button ">LET'S GET IN TOUCH</a>
             </div>
             <!-- step 3 -->
             <div class="step-heading-box">
                 <h5 class="tertiary-heading">WHY BUILD<br><span class="light-bold">WITH HYDRA?</span></h5>
-                <img src="assets/arrow-long.svg" alt="arrow-long" class="third-description-arrow">
+                <img src="assets/arrow-long.svg" alt="arrow-long" class="third-description-arrow hydra-info-d-none">
             </div>
-            <div class="step-description-box">
+            <div class="step-description-box hydra-info-d-none">
                 <p class="info-description">Vitae sapien pellentesque habitant morbi tristique senectus et netus et. Feugiat 
                     nibh sed pulvinar proin gravida hendrerit lectus. Mi sit amet mauris commodo 
                     quis imperdiet massa tincidunt nunc. Viverra aliquet eget sit amet tellus. Ornare 
@@ -117,7 +132,8 @@
 
     <section class="section-feature">
         <div class="feature-grid">
-            <div class="feature-column">
+            <ion-icon class="chevron-outline section-feature-left-button prev" onclick="featPlusSlides(-1)" name="chevron-back-outline"></ion-icon>
+            <div class="feature-column fearture-slide">
                 <div class="features-content">
                     <img src="assets/feature-image-1.svg" alt="image-1" class="feature-image">
                     <h3 class="feature-heading">SIMULATION</h3>
@@ -129,7 +145,7 @@
                     <a href="#" class="btn-build">TRY IT NOW</a>
                 </div>
             </div>
-            <div class="feature-column">
+            <div class="feature-column fearture-slide">
                 <div class="features-content">
                     <img src="assets/feature-image-2.svg" alt="image-1" class="feature-image">
                     <h3 class="feature-heading">EDUCATION</h3>
@@ -141,7 +157,7 @@
                     <a href="#" class="btn-build">TRY IT NOW</a>
                 </div>
             </div>
-            <div class="feature-column">
+            <div class="feature-column fearture-slide">
                 <div class="features-content">
                     <img src="assets/feature-image-3.svg" alt="image-1" class="feature-image">
                     <h3 class="feature-heading">SELF-CARE</h3>
@@ -153,7 +169,7 @@
                     <a href="#" class="btn-build">TRY IT NOW</a>
                 </div>
             </div>
-            <div class="feature-column">
+            <div class="feature-column fearture-slide">
                 <div class="features-content">
                     <img src="assets/feature-image-4.svg" alt="image-1" class="feature-image">
                     <h3 class="feature-heading">OUTDOOR</h3>
@@ -165,37 +181,44 @@
                     <a href="#" class="btn-build">TRY IT NOW</a>
                 </div>
             </div>
+            <ion-icon class="chevron-outline section-feature-right-button next" onclick="featPlusSlides(1)" name="chevron-forward-outline"></ion-icon>
         </div>
     </section>
+
+
     <section class="hydra-banner">
         <div class="banner">
             <div class="banner-img">
                 <img src="assets/hydra-girl-image.png" alt="" class="image-banner">
             </div>
             <div class="banner-text">
-                <h5 class="tertiary-heading">TECHNOLOGIES & HARDWARE<br><span class="light-bold small-heading">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;USED BY HYDRA VR.</span></h5>
+                <h5 class="tertiary-heading">TECHNOLOGIES & HARDWARE<br><span class="light-bold small-heading">USED BY HYDRA VR.</span></h5>
             </div>
-            <div class="drop-down">
+            <div class="drop-down hydra-info-d-none">
                 <ion-icon class="chevron-outline" name="chevron-down-outline"></ion-icon>
             </div>
         </div>
     </section>
     <section class="section-brand">
-        <div class="logos">
-            <img src="assets/unreal-engine.png" alt="">
-            <img src="assets/unity.png" alt="">
-            <img src="assets/oculus.png" alt="">
-            <img src="assets/vive.png" alt="">
+        <div class="brand-position">
+            <ion-icon class="chevron-outline section-logo-left-button prev" onclick="logoPlusSlides(-1)" name="chevron-back-outline"></ion-icon>
+            <div class="logos">
+                <img src="assets/unreal-engine.png" alt="" class="logo-slide">
+                <img src="assets/unity.png" alt="" class="logo-slide">
+                <img src="assets/oculus.png" alt="" class="logo-slide">
+                <img src="assets/vive.png" alt="" class="logo-slide">
+            </div>
+            <ion-icon class="chevron-outline section-logo-right-button next" onclick="logoPlusSlides(1)" name="chevron-forward-outline"></ion-icon>
         </div>
     </section>
     <section class="how-build">
         <div class="grid--2-cols">
             <div class="step-heading-box">
-                <h5 class="tertiary-heading">HOW WE BUILD<br><span class="light-bold">WITH HYDRA VR?</span></h5>
-                <img src="assets/arrow-long.svg" alt="arrow-long" class="arrow-long-build-section">
+                <h5 class="tertiary-heading build-heading" id="build-heading">HOW WE BUILD<br><span class="light-bold">WITH HYDRA VR?</span></h5>
+                <img src="assets/arrow-long.svg" alt="arrow-long" class="arrow-long-build-section hydra-info-d-none">
             </div>
             <div class="step-description-box">
-                <p class="info-description">Vitae sapien pellentesque habitant morbi tristique senectus et netus et. Feugiat
+                <p class="info-description hydra-info-d-none">Vitae sapien pellentesque habitant morbi tristique senectus et netus et. Feugiat
                     nibh sed pulvinar proin gravida hendrerit lectus. Mi sit amet mauris commodo 
                     quis imperdiet massa tincidunt nunc. Viverra aliquet eget sit amet tellus. Ornare 
                     lectus sit amet est placerat in. Lectus magna fringilla urna porttitor rhoncus vitae.</p>
@@ -204,26 +227,28 @@
     </section>
     <section class="number-section">
         <div class="number-list">
-            <div class="numbers">
+            <ion-icon class="chevron-outline section-number-left-button prev" onclick="numberPlusSlides(-1)" name="chevron-back-outline"></ion-icon>
+            <div class="numbers number-slide">
                 <h2 class="number-heading">01</h2>
-                <img src="assets/arrow-small-right.svg" alt="" class="arrow-small-right">
+                <img src="assets/arrow-small-right.svg" alt="" class="arrow-small-right hydra-info-d-none">
                 <span><p class="number-para">3D Conception <br>& Design</p></span>
             </div>
-            <div class="numbers">
+            <div class="numbers number-slide">
                 <h2 class="number-heading">02</h2>
-                <img src="assets/arrow-small-right.svg" alt="" class="arrow-small-right">
+                <img src="assets/arrow-small-right.svg" alt="" class="arrow-small-right hydra-info-d-none">
                 <span><p class="number-para">Interaction <br>Design</p></span>
             </div>
-            <div class="numbers">
+            <div class="numbers number-slide">
                 <h2 class="number-heading">03</h2>
-                <img src="assets/arrow-small-right.svg" alt="" class="arrow-small-right">
+                <img src="assets/arrow-small-right.svg" alt="" class="arrow-small-right hydra-info-d-none">
                 <span><p class="number-para">VR World <br>User Testing</p></span>
             </div>
-            <div class="numbers">
+            <div class="numbers number-slide">
                 <h2 class="number-heading">04</h2>
-                <img src="assets/arrow-small-right.svg" alt="" class="arrow-small-right">
+                <img src="assets/arrow-small-right.svg" alt="" class="arrow-small-right hydra-info-d-none">
                 <span><p class="number-para">Hydra VR <br>Deploy</p></span>
             </div>
+            <ion-icon class="chevron-outline section-number-right-button next" onclick="numberPlusSlides(1)" name="chevron-forward-outline"></ion-icon>
         </div>
     </section>
 
@@ -264,10 +289,10 @@
             <div class="footer-img">
                 <img src="assets/footer-logo.png" alt="">
             </div>
-            <div class="footer-vertical-line">
+            <div class="footer-vertical-line hydra-info-d-none">
                 <img src="assets/footer-vertical-line.png" alt="">
             </div>
-            <div class="content-list">
+            <div class="content-list hydra-info-d-none">
                 <ul class="list first-list">
                     <li class="list-item"><a href="" class="footer-link">ABOUT</a></li>
                     <li class="list-item"><a href="" class="footer-link">SERVICES</a></li>
@@ -276,10 +301,10 @@
                     <li class="list-item"><a href="" class="footer-link">JOIN HYDRA</a></li>
                 </ul>
             </div>
-            <div class="footer-vertical-line">
+            <div class="footer-vertical-line hydra-info-d-none">
                 <img src="assets/footer-vertical-line.png" alt="">
             </div>
-            <div class="content-list">
+            <div class="content-list hydra-info-d-none">
                 <ul class="list second-list">
                     <li class="list-item"><a href="" class="footer-link">F.A.Q</a></li>
                     <li class="list-item"><a href="" class="footer-link">SITEMAP</a></li>
@@ -287,10 +312,10 @@
                     <li class="list-item"><a href="" class="footer-link">LICENSES</a></li>
                 </ul>
             </div>
-            <div class="footer-vertical-line">
+            <div class="footer-vertical-line hydra-info-d-none">
                 <img src="assets/footer-vertical-line.png" alt="">
             </div>
-            <div class="content-list third-list">
+            <div class="content-list third-list footer-content-third">
                 <p class="footer-last-link">SOCIALIZE WITH HYDRA</p>
                 <div class="social-icons">
                     <ion-icon class="s-icon" name="logo-facebook"></ion-icon>
@@ -306,12 +331,14 @@
             </div>
         </div>
         <div class="footer-hori">
-            <img src="assets/footer-horizontal-line.svg" alt="">
+            <img src="assets/footer-horizontal-line.svg" alt="" class="footer-line-horizontal">
         </div>
-        <p class="footer-credits">2023 &copy; HYDRA LANDING PAGE - BY ZINE. E. FALOUTI - ALL RIGHTS RESERVED </p>
+        <p class="footer-credits" id="footer-para">2023 &copy; HYDRA LANDING PAGE - BY ZINE. E. FALOUTI - ALL RIGHTS RESERVED </p>
     </footer>
 
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script type="text/javascript" src="script.js"></script>
 </body>
 </html>

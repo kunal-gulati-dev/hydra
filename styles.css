@@ -49,8 +49,7 @@ body {
 }
 
 .main-section {
-    padding: 4.8rem 8.6rem 4.8rem 8.6rem;
-    
+    padding: 4.8rem 8.6rem 4.8rem 8.6rem; 
 }
 
 /* Header section */
@@ -287,7 +286,6 @@ hr {
 
 .man-with-vr {
     border-radius: 40% 20% 40% 20%;
-
 }
 
 .second-info-description {
@@ -360,7 +358,6 @@ hr {
     height: 303px;
     border-radius: 150px;
     overflow: hidden;
-
 }
 
 .image-banner {
@@ -683,4 +680,20 @@ textarea::placeholder {
     font-size: 1.6rem;
     font-weight: 600;
     text-align: center;
+}
+
+
+
+/* navigation */
+
+.btn-mobile-nav {
+    border: none;
+    background-color: none;
+    cursor: pointer;
+
+    display: none;
+}
+
+.icon-mobile-nav[name="close-circle-outline"] {
+    display: none;
 }
