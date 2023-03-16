@@ -690,7 +690,6 @@ textarea::placeholder {
     border: none;
     background-color: none;
     cursor: pointer;
-
     display: none;
 }
 
